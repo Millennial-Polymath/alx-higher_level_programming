@@ -9,3 +9,7 @@
 * A python script that prints `Programming is like building a multilingual puzzle`
 ### 3. Print Integer
 * Print an integer using string formatters
+### 4 Print float
+* format a float
+### 5. Print String
+* Print 3 times a string stored in the variable str, followed by its first 9 characters.
