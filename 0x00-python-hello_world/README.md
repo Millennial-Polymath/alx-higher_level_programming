@@ -15,3 +15,5 @@
 * Print 3 times a string stored in the variable str, followed by its first 9 characters.
 ### 6. Play with strings
 * Concatenaete 2 strings stored invaraibles
+### 7. Copy - Cut - Paste
+* Slice string literal in different positions
