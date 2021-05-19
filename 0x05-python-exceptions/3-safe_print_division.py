@@ -8,4 +8,4 @@ def safe_print_division(a, b):
     except ZeroDivisionError:
         return None
     finally:
-        print("Inside Result: {}".format(quot if  b != 0 else None))
+        print("Inside Result: {}".format(quot if b != 0 else None))
