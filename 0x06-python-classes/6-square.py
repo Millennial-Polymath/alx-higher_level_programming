@@ -13,7 +13,7 @@ class Square:
         my_print: prints in the stdout the square with the character '#'
     """
     def __init__(self, size=0, position=(0, 0)):
-        if isinstance(size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
