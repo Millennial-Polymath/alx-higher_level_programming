@@ -3,6 +3,15 @@
 
 
 class Square:
+    """
+    Square: defines a square
+    Attributes:
+        size: size of the square.
+    Method:
+        __init__: Initialises size attribute in  each of class instance
+        area: calculates area of a square
+        my_print: prints in the stdout the square with the character '#'
+    """
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
