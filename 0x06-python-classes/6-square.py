@@ -51,11 +51,14 @@ class Square:
             Args: self, tu_value(tuple)
             Return: None
         """
-        for item in tu_value:
-            if not isinstance(item, int):
-                raise TypeError("position must be \
-                a tuple of 2 positive integers")
-        self.__position = tu_value
+        if isinstance(tu_value, tuple) and len(value) == 2:
+            for item in tu_value:
+                if isinstance(item, int) and item >= 0:
+                    self.__position = tu_value
+        else:
+            raise TypeError("position must be \
+            a tuple of 2 positive integers")
+
 
     def area(self):
         """ Public instance method to calc. the area of a square
