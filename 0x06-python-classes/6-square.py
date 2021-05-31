@@ -52,8 +52,8 @@ class Square:
             Return: None
         """
         if isinstance(tu_value, tuple) and len(value) == 2:
-            for item in tu_value:
-                if isinstance(item, int) and item >= 0:
+            if isinstance(value[0], int) and isinstance(value[1], int):
+                if value[0] >= 0 and value[1] >= 0:
                     self.__position = tu_value
         else:
             raise TypeError("position must be \
