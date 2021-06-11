@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ base: contains class Base """
+
+
 import json
 class Base:
     """
@@ -26,6 +28,9 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """
+        Returns a json string rep of list of dictionaries
+        """
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
