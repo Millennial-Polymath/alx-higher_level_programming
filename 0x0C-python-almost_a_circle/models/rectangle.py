@@ -29,7 +29,7 @@ class Rectangle(Base):
         """
         super().__init__(id)
         if not isinstance(width, int):
-            raise TypeError("{} must be an integer".format()
+            raise TypeError("width must be an integer")
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if not isinstance(x, int):
@@ -167,7 +167,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """
-        Returns  the dictionary representation of a Rectangle
+        Returns a dictionary for Rectangle
         """
         return {'id': getattr(self, 'id'),
                 'width': getattr(self, 'width'),
