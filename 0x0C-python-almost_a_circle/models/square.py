@@ -2,7 +2,11 @@
 """
 contains class Square
 """
-Rectangle = __import__("rectangle").Rectangle
+
+
+from models.rectangle import Rectangle
+
+
 class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
@@ -27,6 +31,9 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        """
+        Assign args to attributes
+        """
         if len(args) ==  0:
             for key, value in kwargs.items():
                 setattr(self, key, value)
