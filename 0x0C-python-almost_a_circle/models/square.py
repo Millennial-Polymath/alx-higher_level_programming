@@ -29,7 +29,6 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-
         self.width = value
         self.height = value
 
@@ -55,7 +54,6 @@ class Square(Rectangle):
         return ("[{}] ({}) {}/{} - {}".format(self.__class__.__name__,
                                               self.id, self.x,
                                               self.y, self.width))
-
 
     def get_to_dictionary(self):
         """
