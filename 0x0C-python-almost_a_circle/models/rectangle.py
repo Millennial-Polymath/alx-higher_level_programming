@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     Inherits from class Base
@@ -166,7 +167,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """
-        Returns a ket value dictionary for the attributes and values
+        Returns  the dictionary representation of a Rectangle
         """
         return {'id': getattr(self, 'id'),
                 'width': getattr(self, 'width'),
